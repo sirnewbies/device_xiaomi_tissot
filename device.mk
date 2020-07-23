@@ -110,3 +110,6 @@ $(call inherit-product, build/target/product/verity.mk)
 PRODUCT_PACKAGES += \
     GCam
 
+# Youtube by Vanced Team
+PRODUCT_PACKAGES += \
+    Youtube
