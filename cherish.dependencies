@@ -1,0 +1,28 @@
+[
+  {
+    "repository": "ajitlenka30/android_device_xiaomi_msm8953-common",
+    "target_path": "device/xiaomi/msm8953-common",
+    "branch": "eleven",
+    "remote": "github"
+  }
+
+  {
+    "repository": "ajitlenka30/android_kernel_xiaomi_msm8953",
+    "target_path": "kernel/xiaomi/msm8953",
+    "branch": "eleven",
+    "remote": "github" 
+  }
+
+  {
+    "repository": "ajitlenka30/android_vendor_xiaomi_tissot",
+    "target_path": "vendor/xiaomi/tissot",
+    "branch": "eleven",
+    "remote": "github"
+    
+  {
+    "repository": "ajitlenka30/android_vendor_xiaomi_msm8953-common",
+    "target_path": "vendor/xiaomi/msm8953-common",
+    "branch": "eleven",
+    "remote": "github"
+  }
+]
