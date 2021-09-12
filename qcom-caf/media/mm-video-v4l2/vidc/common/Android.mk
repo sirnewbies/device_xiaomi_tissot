@@ -24,8 +24,8 @@ endif
 # ---------------------------------------------------------------------------------
 
 libmm-vidc-inc      := $(LOCAL_PATH)/inc
-libmm-vidc-inc      += device/xiaomi/tissot/qcom-caf/media/mm-core/inc
-libmm-vidc-inc      += device/xiaomi/tissot/qcom-caf/media/libc2dcolorconvert
+libmm-vidc-inc      += $(LOCAL_PATH)/../../../mm-core/inc
+libmm-vidc-inc      += $(LOCAL_PATH)/../../../libc2dcolorconvert
 libmm-vidc-inc      += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 
 LOCAL_MODULE                    := libOmxVidcCommon
