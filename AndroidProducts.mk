@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_tissot.mk
+    $(LOCAL_DIR)/corvus_tissot.mk

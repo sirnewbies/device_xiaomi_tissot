@@ -21,12 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common Corvus OS stuff.
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := cherish_tissot
+PRODUCT_NAME := corvus_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
@@ -41,16 +41,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT :=  "google/redfin/redfin:11/RQ3A.210805.001.A1/7474174:user/release-keys"
 
-# CheriahOS  Stuffs
-CHERISH_BUILD_TYPE := OFFICIAL
-WITH_GMS := true
+# Inherit some common corvus flags
+RAVEN_LAIR=Official
+CORVUS_MAINTAINER=Ajit
+USE_GAPPS=true
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
-
-# Maintainer
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.cherish.maintainer=Ajit(dont_belive_me_02) \
-
-
