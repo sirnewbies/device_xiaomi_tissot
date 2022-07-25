@@ -34,3 +34,15 @@ BUILD_FINGERPRINT := "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:u
 # LineageOS Stuffs
 TARGET_GAPPS_ARCH := arm64
 TARGET_SUPPORTS_QUICK_TAP := true
+
+# Sushi Bootanimation
+SUSHI_BOOTANIMATION := 1080
+
+# Maintainer flag
+RICE_MAINTAINER := HaKaN
+
+# Device flag
+RICE_DEVICE := tissot
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
