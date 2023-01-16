@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_tissot.mk
+    $(LOCAL_DIR)/banana_tissot.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_tissot-user \
-    aosp_tissot-userdebug \
-    aosp_tissot-eng
+    banana_tissot-user \
+    banana_tissot-userdebug \
+    banana_tissot-eng

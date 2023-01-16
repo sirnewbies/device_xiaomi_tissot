@@ -21,12 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from tissot device
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
-# Inherit some common aosp stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common banana stuff.
+$(call inherit-product, vendor/banana/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := aosp_tissot
+PRODUCT_NAME := banana_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
@@ -47,3 +47,5 @@ TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_SUPPORTS_QUICK_TAP := false
+BANANA_MAINTAINER := 𝙃𝙤𝙣𝙤𝙠𝙖𝙆𝙤𝙪𝙨𝙖𝙠𝙖
+TARGET_FACE_UNLOCK_SUPPORTED := true
