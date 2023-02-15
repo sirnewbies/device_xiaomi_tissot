@@ -22,11 +22,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
 # Inherit some common Corvus OS stuff.
-$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
+$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
+
+ifeq ($(WITH_GAPPS),true)
+TARGET_INCLUDE_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_GAPPS := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+endif
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := corvus_tissot
+PRODUCT_NAME := fluid_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
@@ -44,11 +51,9 @@ BUILD_FINGERPRINT :=  "google/redfin/redfin:11/RQ3A.210905.001/7511028:user/rele
 # Offline Charging
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
-# Inherit some common corvus flags
-RAVEN_LAIR=Official
-CORVUS_MAINTAINER=Ajit
-USE_GAPPS=true
-TARGET_GAPPS_ARCH := arm64
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
+IS_PHONE := true
+FLUID_BUILD_TYPE := UNOFFICIAL
+
+PRODUCT_PRODUCT_PROPERTIES += \
+  ro.fluid.maintainer=Romi Yusnandar \
+  ro.fluid.cpu=MSM8953
