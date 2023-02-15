@@ -15,9 +15,9 @@
 
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fluid_tissot.mk
+    $(LOCAL_DIR)/syberia_tissot.mk
 
 COMMON_LUNCH_CHOICES := \
-    fluid_tissot-user \
-    fluid_tissot-userdebug \
-    fluid_tissot-eng
+    syberia_tissot-user \
+    syberia_tissot-userdebug \
+    syberia_tissot-eng
