@@ -15,9 +15,9 @@
 
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/syberia_tissot.mk
+    $(LOCAL_DIR)/havoc_tissot.mk
 
 COMMON_LUNCH_CHOICES := \
-    syberia_tissot-user \
-    syberia_tissot-userdebug \
-    syberia_tissot-eng
+    havoc_tissot-user \
+    havoc_tissot-userdebug \
+    havoc_tissot-eng
