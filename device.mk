@@ -72,9 +72,6 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_msm8953 \
     fakelogprint
 
-# Properties
--include device/xiaomi/tissot/prop.mk
-
 # Prebuilt Apps
 PRODUCT_PACKAGES += \
     GalleryGoPrebuilt
