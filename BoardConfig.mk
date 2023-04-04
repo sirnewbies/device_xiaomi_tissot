@@ -57,6 +57,13 @@ TARGET_LD_SHIM_LIBS := \
     /vendor/lib64/hw/gf_fingerprint.default.so|fakelogprint.so \
     /vendor/lib64/libgf_ca.so|fakelogprint.so \
     /vendor/lib64/libgf_hal.so|fakelogprint.so
+    
+# Treble Build
+BOARD_VENDORIMAGE_PARTITION_SIZE := 629145600
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_VENDOR := vendor
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/tissot/BoardConfigVendor.mk
