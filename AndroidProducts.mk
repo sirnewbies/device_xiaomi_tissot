@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/tequila_tissot.mk
+    $(LOCAL_DIR)/aosp_tissot.mk
 
 COMMON_LUNCH_CHOICES := \
-    tequila_tissot-user \
-    tequila_tissot-userdebug \
-    tequila_tissot-eng
+    aosp_tissot-user \
+    aosp_tissot-userdebug \
+    aosp_tissot-eng
