@@ -33,4 +33,7 @@
 
    <!-- Whether device supports button backlight -->
    <bool name="config_button_brightness_support">true</bool>
+
+   <!-- Wheter the device support smart pixel-->
+   <bool name="config_supportSmartPixels">true</bool>
 </resources>
