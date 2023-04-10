@@ -26,7 +26,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := tequila_tissot
+PRODUCT_NAME := aosp_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
@@ -44,6 +44,7 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_SUPPORTS_QUICK_TAP := true
 
+WITH_GMS := false
 # Camera
 TARGET_BUILD_GRAPHENEOS_CAMERA := false
 TARGET_BUILD_APERTURE_CAMERA := true
