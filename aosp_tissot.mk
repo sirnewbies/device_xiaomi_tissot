@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
 # Inherit some common RiceDroid stuff.
-$(call inherit-product, vendor/tequila/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
@@ -33,6 +33,8 @@ PRODUCT_MODEL := Mi A1
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
+TARGET_BOOT_ANIMATION_RES := 1080
+LESSAOSP_BUILD_TYPE := UNOFFICIAL
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 TARGET_FACE_UNLOCK_SUPPORTED := true
