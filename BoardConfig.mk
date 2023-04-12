@@ -45,3 +45,6 @@ VENDOR_SECURITY_PATCH := 2020-05-05
 
 # Inherit the proprietary files
 include vendor/xiaomi/tissot/BoardConfigVendor.mk
+
+# Havoc-OS Props 
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/havoc.prop

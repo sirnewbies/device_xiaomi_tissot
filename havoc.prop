@@ -1,0 +1,6 @@
+# CI Props
+
+ro.havoc.device.name=Xiaomi Mi A1
+ro.havoc.group.url=https://t.me/k_build_support 
+ro.havoc.maintainer=Romi Yusnandar
+ro.havoc.maintainer.username=Anothermi

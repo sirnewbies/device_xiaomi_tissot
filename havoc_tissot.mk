@@ -21,18 +21,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from tissot device
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
-# Inherit some common Nusantara stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
-NAD_BUILD_TYPE := OFFICIAL
+# Inherit some common havoc stuff.
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
+WITH_GAPPS := true
 IS_PHONE := true
 TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_GAPPS_ARCH := arm64
 
+HAVOC_BUILD_TYPE := UNOFFICIAL
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := nad_tissot
+PRODUCT_NAME := havoc_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
