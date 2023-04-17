@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_tissot.mk
+    $(LOCAL_DIR)/banana_tissot.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_tissot-user \
-    havoc_tissot-userdebug \
-    havoc_tissot-eng
+    banana_tissot-user \
+    banana_tissot-userdebug \
+    banana_tissot-eng
