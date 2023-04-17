@@ -53,5 +53,3 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 # Inherit the proprietary files
 include vendor/xiaomi/tissot/BoardConfigVendor.mk
 
-# Havoc-OS Props 
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/havoc.prop
