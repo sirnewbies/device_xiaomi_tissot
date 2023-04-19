@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_tissot.mk
+    $(LOCAL_DIR)/xtended_tissot.mk
+
+COMMON_LUNCH_CHOICES := \
+    xtended_tissot-user \
+    xtended_tissot-userdebug \
+    xtended_tissot-eng
