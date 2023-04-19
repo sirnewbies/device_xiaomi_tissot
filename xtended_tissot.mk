@@ -22,11 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
 # Inherit some common RiceDroid stuff.
-$(call inherit-product, vendor/tequila/config/common_full_phone.mk)
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := tequila_tissot
+PRODUCT_NAME := xtended_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
@@ -42,20 +42,25 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_SUPPORTS_QUICK_TAP := true
 
+# Xtended Stuffs
+XTENDED_BUILD_MAINTAINER := RomiYusnandar
+XTENDED_BUILD_TYPE := UNOFFICIAL
+WITH_GMS_MINIMAL := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# SoC
+PROCESSOR_MODEL := MSM8953
+
 # Camera
 TARGET_BUILD_GRAPHENEOS_CAMERA := false
 TARGET_BUILD_APERTURE_CAMERA := true
 
 # disable/enable blur support, default is false
-TARGET_ENABLE_BLUR := true
+TARGET_ENABLE_BLUR := false
 
 # Opt out of google dialer support, compiler will build aosp dialer,
 # package type will change from PIXEL -> GMS
 TARGET_OPTOUT_GOOGLE_TELEPHONY := true
-
-# Compiler will only build GMS playstore services, its dependencies, and Gboard app.
-# package type will change from PIXEL/GMS -> CORE
-TARGET_CORE_GMS := true
 
 # Spoof build description/fingerprint as pixel device
 TARGET_USE_PIXEL_FINGERPRINT := true
