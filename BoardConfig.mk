@@ -60,3 +60,5 @@ TARGET_LD_SHIM_LIBS := \
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/tissot/BoardConfigVendor.mk
+
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop

@@ -21,12 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from tissot device
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
-# Inherit some common RiceDroid stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Droidx stuff.
+$(call inherit-product, vendor/droidx/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := lineage_tissot
+PRODUCT_NAME := droidx_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
@@ -35,9 +35,10 @@ TARGET_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# RiceDroid Stuffs
-RICE_MAINTAINER := ZHANtech™
-RICE_DEVICE := tissot
+DROIDX_BUILD_TYPE := UNOFFICIAL
+DROIDX_GAPPS := false
+TARGET_BOOT_ANIMATION_RES := 1080
+
 TARGET_FACE_UNLOCK_SUPPORTED := true
 USE_AOSP_CLOCK := true
 SUSHI_BOOTANIMATION := 1080
@@ -51,10 +52,7 @@ TARGET_BUILD_GRAPHENEOS_CAMERA := false
 TARGET_BUILD_APERTURE_CAMERA := true
 
 # disable/enable blur support, default is false
-TARGET_ENABLE_BLUR := true
-
-# GMS build flags, if none were defined the package build type will be AOSP (default: false)
-WITH_GMS := true
+TARGET_ENABLE_BLUR := false
 
 # Opt out of google dialer support, compiler will build aosp dialer,
 # package type will change from PIXEL -> GMS
