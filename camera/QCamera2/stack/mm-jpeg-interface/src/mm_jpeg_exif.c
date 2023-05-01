@@ -564,6 +564,18 @@ int process_meta_data(metadata_buffer_t *p_meta, QOMX_EXIF_INFO *exif_info,
         p_sensor_params = *l_sensor_params;
         is_sensor_meta_valid = true;
       }
+
+      IF_META_AVAILABLE(int32_t, flash_mode, CAM_INTF_PARM_LED_MODE, p_meta) {
+        p_sensor_params.flash_mode = *flash_mode;
+      } else {
+        LOGE("Cannot extract flash mode value");
+      }
+
+      IF_META_AVAILABLE(int32_t, flash_state, CAM_INTF_META_FLASH_STATE, p_meta) {
+        p_sensor_params.flash_state = (cam_flash_state_t) *flash_state;
+      } else {
+        LOGE("Cannot extract flash state value");
+      }
     } else {
       /* HAL V3 */
       IF_META_AVAILABLE(cam_3a_params_t, l_3a_params, CAM_INTF_META_AEC_INFO,
