@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_tissot.mk
+    $(LOCAL_DIR)/revengeos_tissot.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_tissot-user \
-    nad_tissot-userdebug \
-    nad_tissot-eng
+    revengeos_tissot-user \
+    revengeos_tissot-userdebug \
+    revengeos_tissot-eng
