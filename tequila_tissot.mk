@@ -9,14 +9,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/tequila/config/common_full_phone.mk)
 
 # Inherit from tissot device
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := lineage_tissot
+PRODUCT_NAME := tequila_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
@@ -36,14 +36,11 @@ TARGET_SUPPORTS_QUICK_TAP := true
 
 # GAPPS Stuffs
 TARGET_GAPPS_ARCH := arm64
-WITH_GMS := true
-TARGET_CORE_GMS := true
+#WITH_GMS := true
+#TARGET_CORE_GMS := true
 
 # Pixel Fingerprint
 TARGET_USE_PIXEL_FINGERPRINT := true
 
 # Face-unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
-
-# RisingOS Stuffs
-RISING_MAINTAINER := Meghthedev
