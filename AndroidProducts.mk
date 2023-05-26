@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/revengeos_tissot.mk
+    $(LOCAL_DIR)/corvus_tissot.mk
 
 COMMON_LUNCH_CHOICES := \
-    revengeos_tissot-user \
-    revengeos_tissot-userdebug \
-    revengeos_tissot-eng
+    corvus_tissot-user \
+    corvus_tissot-userdebug \
+    corvus_tissot-eng
