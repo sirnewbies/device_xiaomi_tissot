@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_tissot.mk
+    $(LOCAL_DIR)/xdroid_tissot.mk
+
+COMMON_LUNCH_CHOICES := \
+    xdroid_tissot-user \
+    xdroid_tissot-userdebug \
+    xdroid_tissot-eng
