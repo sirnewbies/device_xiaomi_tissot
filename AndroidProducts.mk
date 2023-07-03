@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_tissot.mk
+    $(LOCAL_DIR)/blaze_tissot.mk
+
+COMMON_LUNCH_CHOICES := \
+    blaze_tissot-user \
+    blaze_tissot-userdebug \
+    blaze_tissot-eng
