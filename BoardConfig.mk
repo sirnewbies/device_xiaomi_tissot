@@ -40,11 +40,5 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 # Security Patch Level
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
-# Shims
-TARGET_LD_SHIM_LIBS := \
-    /vendor/lib64/hw/gf_fingerprint.default.so|fakelogprint.so \
-    /vendor/lib64/libgf_ca.so|fakelogprint.so \
-    /vendor/lib64/libgf_hal.so|fakelogprint.so
-
 # Inherit the proprietary files
 include vendor/xiaomi/tissot/BoardConfigVendor.mk
