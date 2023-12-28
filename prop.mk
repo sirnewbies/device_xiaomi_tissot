@@ -1,3 +1,6 @@
+# DroidX
+ro.droidx.maintainer=sirNewbies
+
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.audio.fluence.speaker=true \
